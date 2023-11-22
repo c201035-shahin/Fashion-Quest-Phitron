@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar */
+
+header{
+	position: fixed;
+    width: 100vw;
+    top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #1A187A;
+    padding: 20px 0;
+	transition-duration: .4s;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    cursor: pointer;
+}
+.navbar li{
+	position: relative;
+    list-style: none;
+}
+.navbar a{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 10px 20px;
+    text-decoration: none;
+}
+.navbar a::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background: aquamarine;
+	left: 0;
+	bottom: -4px;
+	transition: ease .4s;
+}
+.navbar a:hover:after{
+	width: 100%;
+}
+.navbar i{
+	color: beige;
+	font-size: 1.2rem;
+	margin-left: 24px;
+}
+
+/* Home */
+
+main{
+    margin: 0px;
+    padding: 0px;
+}
+
+#home{
+    height: 100vh;
+    background-image: url(/resources/Home\ image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-margin-top: 10vh;
+   
+}
+#home .slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero .title h1{
+    color: #000;
+	font-family: Montserrat;
+	font-size: 90px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 72px;
+	letter-spacing: -0.96px;
+}
+.Bold{
+	font-weight: 700;
+}
+.hero .title h2{
+	color: #1E046A;
+	font-family: Montserrat;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+.description p{
+    color: #000;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+#home img{
+    height: 70vh;
+	width: auto;
+	float: right;
+    align-items: center;
+}
+#home i{
+	color: #670E86;
+	font-size: 30px;
+}
+.bttn{
+	border-radius: 6px;
+	border: 1px solid var(--main-white, #FFF);
+	background: #171495;
+	color: #FFF;
+	padding: 15px 50px;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
