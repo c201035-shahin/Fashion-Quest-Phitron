@@ -372,6 +372,14 @@ main{
     text-decoration: none;
 	cursor: pointer;
 }
+/* .product-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+	grid-gap: 50px;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: space-between;
+} */
 .product-content{
 	padding-top: 50px;
 	display: flex;
