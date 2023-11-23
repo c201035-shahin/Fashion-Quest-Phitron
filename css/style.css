@@ -349,6 +349,9 @@ main{
 	padding-top: 10px;
 	line-height: 20px;
 }
+
+/* Product Cart */
+
 .product{
 	padding: 30px 160px;
 	background: white;
@@ -423,4 +426,127 @@ main{
 	font-style: normal;
 	font-weight: 500;
 	line-height: 24px;
+}
+
+/* Offer */
+
+.currect-offer{
+	padding: 60px 0px;
+	background: #958AD4;
+	height: 472px;
+}
+.offer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.offer h1{
+	color: #25177B;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 72px;
+	letter-spacing: -0.72px;
+}
+.sale{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 72px;
+	letter-spacing: -0.72px;
+}
+.offer p{
+	color: #FFF;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 32px;
+	width: 383px;
+}
+.img-left img{
+	height: 342px;
+	width: auto;
+	margin-left: -120px;
+
+}
+.img-right img{
+	height: 342px;
+	width: auto;
+	margin-right: -120px;
+}
+
+/* Footer */
+
+.footer{
+	width: 100%;
+	background: #0E071B;
+	padding: 100px 160px;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-icons{
+	width: 190px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-icons i{
+	color: #FFF;
+	font-size: 24px;
+}
+.footer-services{
+	display: flex;
+	width: 295px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	flex-shrink: 0;
+}
+.footer-services h1{
+	color: white;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 16px;
+}
+.footer-services p{
+	color: white;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 32px;
+}
+.footer-assistance{
+	display: flex;
+	width: 295px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	flex-shrink: 0;
+}
+.footer-assistance h1{
+	color: white;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 16px;
+}
+.footer-assistance p{
+	color: white;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 32px;
 }
