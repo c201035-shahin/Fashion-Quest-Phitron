@@ -22,7 +22,7 @@ header{
 }
 .navbar{
     display: flex;
-    cursor: pointer;
+	z-index: 1;
 }
 .navbar li{
 	position: relative;
@@ -37,8 +37,9 @@ header{
 	line-height: normal;
 	padding: 10px 20px;
     text-decoration: none;
+	cursor: pointer;
 }
-.navbar a::after{
+/* .navbar a::after{
 	content: '';
 	position: absolute;
 	width: 0;
@@ -50,7 +51,7 @@ header{
 }
 .navbar a:hover:after{
 	width: 100%;
-}
+} */
 .navbar i{
 	color: beige;
 	font-size: 1.2rem;
@@ -80,6 +81,7 @@ main{
     height: 100vh;
 }
 .hero{
+	z-index: -10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +127,7 @@ main{
 }
 .bttn{
 	border-radius: 6px;
-	border: 1px solid var(--main-white, #FFF);
+	border: 1px solid white;
 	background: #171495;
 	color: #FFF;
 	padding: 15px 50px;
@@ -137,3 +139,8 @@ main{
 	line-height: 24px;
 }
 
+#about, #contact{
+	height: 100vh;
+	background-color: #FFF;
+	scroll-margin-top: 10vh;
+}
