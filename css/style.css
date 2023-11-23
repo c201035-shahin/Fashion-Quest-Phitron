@@ -6,6 +6,7 @@ body{
 /* navbar */
 
 header{
+	z-index: 1000;
 	position: fixed;
     width: 100vw;
     top: 0;
@@ -22,7 +23,6 @@ header{
 }
 .navbar{
     display: flex;
-	z-index: 1;
 }
 .navbar li{
 	position: relative;
@@ -81,7 +81,6 @@ main{
     height: 100vh;
 }
 .hero{
-	z-index: -10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,8 +138,123 @@ main{
 	line-height: 24px;
 }
 
-#about, #contact{
+/* #about, #contact{
 	height: 100vh;
 	background-color: #FFF;
 	scroll-margin-top: 10vh;
+} */
+
+.product{
+	height: 600px;
+	background: rgb(240, 240, 240);
+}
+.banner-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.banner-left{
+	padding: 0px 0px;
+	width: 50%;
+	overflow: hidden;
+}
+.widesquare{
+	display: flex;
+	height: 328px;
+	overflow: hidden;
+	background: #FFF;
+}
+.playstation img{
+	margin-top: 30px;
+	margin-left: -50px;
+	width: 500px;
+	height: auto;
+}
+.details{
+	padding: 70px 30px 70px 0px;
+}
+.details h1{
+	color: #000;
+	font-family: Montserrat;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 40px;
+}
+.details p{
+	color: #000;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+}
+.squarebanner{
+	display: flex;
+	height: 272px;
+	overflow: hidden;
+	background: #ADC2D7;
+}
+.sound img{
+	margin-top: -180px;
+	margin-left: -130px;
+	width: 650px;
+}
+.description{
+	padding: 40px 80px;
+}
+.description h1{
+	color: #000;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px; /* 137.931% */
+}
+.description p{
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+}
+.light{
+	font-weight: 200;
+}
+.banner-right{
+	padding: 0px 0px;
+	width: 50%;
+	overflow: hidden;
+}
+.banner-right{
+	display: flex;
+	height: 600px;
+	padding: 20px 0px 20px 50px;
+	background: rgb(240, 240, 240);
+	overflow: hidden;
+}
+.computer img{
+	height: 580px;
+}
+.info{
+	padding-top: 30px;
+	padding-left: 40px;
+}
+.info h1{
+	color: #000;
+	font-family: Montserrat;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px;
+}
+.info p{
+	color: black;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
 }
