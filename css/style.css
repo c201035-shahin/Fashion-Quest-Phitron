@@ -39,7 +39,17 @@ header{
     text-decoration: none;
 	cursor: pointer;
 }
-/* .navbar a::after{
+.navbar i{
+	color: beige;
+	font-size: 1.2rem;
+	margin-left: 24px;
+	transition: ease .4s;
+	cursor: pointer;
+}
+
+/* Hover effect */
+
+.navbar a::after{
 	content: '';
 	position: absolute;
 	width: 0;
@@ -51,11 +61,28 @@ header{
 }
 .navbar a:hover:after{
 	width: 100%;
-} */
-.navbar i{
-	color: beige;
-	font-size: 1.2rem;
-	margin-left: 24px;
+}
+.navbar i:hover{
+	width: 100%;
+	transform: translateY(-4px);
+}
+
+/* Sticky Header */
+
+header.sticky{
+	padding: 12px 80px;
+	background: black;
+}
+.sticky .navbar a{
+	color: #fff;
+}
+.sticky .navbar a::after{
+	background: white;
+}
+.sticky .m-btn{
+	background: #fff;;
+	color: gray;
+	font-weight: 500;
 }
 
 /* Home */
@@ -106,7 +133,7 @@ main{
 	font-weight: 400;
 	line-height: 32px;
 }
-.description p{
+.intro p{
     color: #000;
 	font-family: Montserrat;
 	font-size: 18px;
@@ -144,9 +171,11 @@ main{
 	scroll-margin-top: 10vh;
 } */
 
-.product{
+/* Pdoduct Banner */
+
+.banner{
 	height: 600px;
-	background: rgb(240, 240, 240);
+	background: transparent;
 }
 .banner-container{
 	display: flex;
@@ -231,16 +260,17 @@ main{
 .banner-right{
 	display: flex;
 	height: 600px;
-	padding: 20px 0px 20px 50px;
+	padding: 30px 0px 30px 50px;
 	background: rgb(240, 240, 240);
 	overflow: hidden;
 }
 .computer img{
-	height: 580px;
+	margin-right: -520px;
+	height: 520px;
+	padding: 10px 0px 0px 50px;
 }
 .info{
-	padding-top: 30px;
-	padding-left: 40px;
+	padding: 150px 0px 150px 30px;
 }
 .info h1{
 	color: #000;
@@ -256,5 +286,141 @@ main{
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 300;
+	line-height: 24px;
+}
+
+/* Category */
+
+.category{
+	padding: 80px 160px;
+	background: #FAFAFA;
+}
+.sironam{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.sironam h1{
+	width: 288px;
+	color: black;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px; /* 133.333% */
+	letter-spacing: 0.24px;
+}
+.icon{
+	display: flex;
+	gap: 20px;
+	color: #670E86;
+	font-size: 28px;
+}
+.block-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(128px, 180px));
+	grid-gap: 50px;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+.box{
+	display: flex;
+	background: #EDEDED;
+	padding: 30px 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all .30s;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.box i{
+	font-size: 40px;
+}
+.box p{
+	color: black;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	padding-top: 10px;
+	line-height: 20px;
+}
+.product{
+	padding: 30px 160px;
+	background: white;
+}
+.prod-intro{
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.prod-intro a{
+	color: black;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 0px 40px 80px 0px;
+    text-decoration: none;
+	cursor: pointer;
+}
+.product-content{
+	padding-top: 50px;
+	display: flex;
+	gap: 50px;
+}
+.cart-item{
+	padding: 20px 20px;
+	background: #F6F6F6;
+	width: 200px;
+	height: auto;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	transition: ease .4s;
+}
+.cart-item:hover{
+	transform: translateY(-4px);
+}
+.cart-item img{
+	padding: 10px 0px;
+	width: 150px;
+	height: auto;
+}
+.cart-item p{
+	color: black;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	text-align: center;
+}
+.cart-item h1{
+	color: black;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 24px; /* 100% */
+	letter-spacing: 0.72px;
+}
+.btton{
+	border-radius: 6px;
+	background: black;
+	color: #FFF;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
 	line-height: 24px;
 }
