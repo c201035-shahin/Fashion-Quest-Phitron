@@ -440,6 +440,7 @@ main{
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
+	overflow: hidden;
 }
 .offer h1{
 	color: #25177B;
