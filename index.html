@@ -1,43 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <img src="./resources/Only Logo.png" alt="logo" width="20px">
-        <title>Fashion Quest</title>
-
-        <link rel="stylesheet" href="css/style.css">
-
-		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    </head>
-	
-<body>
-    <header>
-        <div>
-            <a href="#"><img class="logo" src="./resources/Group 2.png"></span></a>
-        </div>
-        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><i class="fas fa-shopping-cart"></i></li>
-            <li><i class="far fa-user"></i></li>
-        </ul>
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>Fashion Quest</title> 
+ 
+    <link rel="stylesheet" href="./css/style.css"> 
+ 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+ 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head> 
+ 
+<body> 
+     
+    <header class="header"> 
+ 
+        <div class="logo"> 
+            <a href="#"><img src="./resources/Group 2.png" alt="Shop Hero"> </a>
+        </div> 
+ 
+        <!-- <a href="#" class="logo">Logo</a> -->
+ 
+        <input type="checkbox" id="check"> 
+        <label for="check" class="icons"> 
+            <i class="bx bx-menu" id="menu-icon"></i> 
+            <i class='bx bx-x' id="close-icon"></i> 
+        </label> 
+ 
+        <nav class="navbar_1"> 
+            <a href="#home" style="--i:0">Home</a> 
+            <a href="#about" style="--i:1">About</a> 
+            <a href="#contact" style="--i:2">Contact</a>
+            <a href="#cart" style="--i:3"><i class='bx bx-cart'></i></a> 
+            <a href="#profile" style="--i:4"><i class='bx bx-user-circle'></i></i></a>
+        </nav> 
     </header>
 
-	<main>
+    <main>
 		<section id="home">
             <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
 
@@ -45,7 +58,7 @@
                   <div class="carousel-item active">
                     <div class="container">
                         <div class="row hero">
-                            <div class="col-md-6 ">
+                            <div class="col-md-6">
                                 <div class="title">
 									<h2>Pro.Beyond.</h2>
                                     <h1>IPhone <span class="Bold">14 Pro</span></h1>
@@ -55,7 +68,7 @@
                                 </div>
                                 <button class="bttn">Shop Now</button>
                             </div>
-                            <div class="col-md-6 img">
+                            <div class="col-md-6">
                                 <img src="./resources/Iphone Image.png" alt="product" width="300px">
                             </div>
                         </div>
@@ -75,7 +88,7 @@
                                 </div>
                                 <button class="bttn">Shop Now</button>
                             </div>
-                            <div class="col-md-6 img">
+                            <div class="col-md-6">
                                 <img src="./resources/hero-img2.png" alt="product" width="300px">
                             </div>
                         </div>
@@ -94,7 +107,7 @@
                                 </div>
                                 <button class="bttn">Shop Now</button>
                             </div>
-                            <div class="col-md-6 img">
+                            <div class="col-md-6">
                                 <img src="./resources/hero-img3.png" alt="product" width="300px">
                             </div>
                         </div>
@@ -198,7 +211,7 @@
     
             <div class="product-content">
                 <div class="cart-item">
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart "></i>
                     <img src="./resources/Iphone 14 pro 1-2.png">
                     <p>Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
                     <h1>$900</h1>
@@ -287,4 +300,8 @@
 
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
+</html>
+ 
+</body> 
+ 
 </html>
